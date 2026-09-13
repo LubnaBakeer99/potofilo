@@ -31,6 +31,6 @@ export const experience = [
   { period: '06/2021 — 09/2021', role: 'Programming Trainer', company: 'MenaCatalyst Foundation', location: 'Sweden · Remote', responsibilities: [] },
 ]
 
-export const education = [{ degree: 'Bachelor of Software Engineering', school: 'homs University', location: 'Syria · Homs'}]
+export const education = [{ degree: 'Bachelor of Software Engineering', school: 'Homs University', location: 'Syria · Homs'}]
 export const languages = [{ name: 'Arabic', level: 'Native' }, { name: 'English', level: 'Professional Working Proficiency' }]
 export const activities = ['ACPC-SCPC · 01/2017 — 04/2017', 'SCPC Syrian Collegiate · 05/2022 — 07/2022', 'Mena Catalyst Instructor · 07/2021 — 09/2021']
