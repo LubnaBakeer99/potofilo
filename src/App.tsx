@@ -29,7 +29,24 @@ function App() {
 
       <section className="section experience-section" id="experience"><div className="container"><SectionLabel number="03">Experience</SectionLabel><div className="section-heading"><h2>Work that keeps<br /><span>me moving forward.</span></h2></div><div className="timeline">{experience.map((item, index) => <motion.article className="timeline-item" key={`${item.company}-${item.role}`} variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: index * .04 }}><div className="timeline-period">{item.period}</div><div className="timeline-dot" /><div className="timeline-detail"><p className="role-label">{item.location}</p><h3>{item.role}</h3><strong>{item.company}</strong>{item.responsibilities.length > 0 && <ul>{item.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}</ul>}</div></motion.article>)}</div></div></section>
 
-      <section className="section split-section" id="education"><div className="container split-grid"><div><SectionLabel number="04">Education</SectionLabel><div className="section-heading"><h2>The foundation<br /><span>underneath it all.</span></h2></div></div><div className="info-card"><BriefcaseBusiness size={22} /><p className="card-period"></p><h3>{education[0].degree}</h3><p>{education[0].school}</p><small>{education[0].location}</small></div></div></section>
+      {/* <section className="section split-section" id="education"><div className="container split-grid"><div><SectionLabel number="04">Education</SectionLabel><div className="section-heading"><h2>The foundation<br /><span>underneath it all.</span></h2></div></div><div className="info-card"><BriefcaseBusiness size={22} /><p className="card-period"></p><h3>{education[0].degree}</h3><p>{education[0].school}</p><small>{education[0].location}</small></div></div></section> */}
+
+<section className="section split-section" id="education">
+  <div className="container split-grid">
+    <div>
+      <SectionLabel number="04">Education</SectionLabel>
+      <div className="section-heading">
+        <h2>The foundation<br /><span>underneath it all.</span></h2>
+      </div>
+    </div>
+    <div className="info-card">
+      <p className="card-period"></p>
+      <h3>{education[0].degree}</h3>
+      <p>{education[0].school}</p>
+      <small>{education[0].location}</small>
+    </div>
+  </div>
+</section>
 
       <section className="section activities-section" id="activities"><div className="container split-grid"><div><SectionLabel number="05">Beyond the desk</SectionLabel><div className="section-heading"><h2>Learning is<br /><span>part of the work.</span></h2></div></div><div className="activity-list">{activities.map((activity) => <div className="activity" key={activity}><span>↗</span>{activity}</div>)}<div className="language-row">{languages.map((language) => <div key={language.name}><strong>{language.name}</strong><small>{language.level}</small></div>)}</div></div></div></section>
 
